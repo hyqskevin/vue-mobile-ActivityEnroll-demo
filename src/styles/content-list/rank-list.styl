@@ -1,0 +1,100 @@
+@import "../element.styl"
+collapse-list()
+  position: absolute
+  top: 4px
+  left: 4px
+  right: 4px
+  bottom: 4px
+  overflow-y auto
+  border-radius 8px
+  border-top: 1px solid $separateLine
+  border-bottom: 1px solid $separateLine
+  background-color: #FFF
+  padding 0 8px
+  .collapse-item__header
+    display: flex
+    flex-direction: row
+    //justify-content : space-between
+    white-space: nowrap
+    border-bottom: 1px solid $separateLine
+    .collapse-item__gold-icon
+      margin 28px 8px 28px 0
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid #ffffff
+      //background #fbde55
+      background-image url("~@/assets/gold.png")
+      background-size cover
+      text-align center
+      color $fontColorLight
+    .collapse-item__silver-icon
+      margin 28px 8px 28px 0
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid #ffffff
+      //background #aeaeae
+      background-image url("~@/assets/silver.png")
+      background-size cover
+      text-align center
+      color $fontColorLight
+    .collapse-item__bronze-icon
+      margin 28px 8px 28px 0
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid #ffffff
+      background-image url("~@/assets/bronze.png")
+      background-size cover
+      //background #e18e4e
+      text-align center
+      color $fontColorLight
+    .collapse-item__icon
+      margin 28px 8px 28px 0
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid #ffffff
+      text-align center
+      color $fontColor
+    .collapse-item__info
+      display: flex
+      flex-direction: column
+      text-overflow: ellipsis
+      white-space: nowrap
+      align-items: left
+      padding 8px 0
+      //height: 72px
+      line-height: 24px
+      color: $fontColor
+      //cursor: pointer
+      font-size: 14px
+      font-weight: 500
+      -webkit-transition: border-bottom-color .3s
+      transition: border-bottom-color .3s
+      outline: 0
+    .collapse-item__button
+      margin 40px 0 40px auto
+      padding 4px 8px
+      font-size 12px
+      height 24px
+    .collapse-item__arrow
+      margin: 24px 0px 24px auto
+      font-weight: 300
+      height 38px
+      border 0
+  .collapse-item__wrap
+    will-change: height
+    overflow: hidden
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    border-bottom: 1px solid $separateLine
+    transition: height .3s
+    .collapse-item__content
+      padding 4px 8px 24px 8px
+      font-size: 14px
+      color: $fontColor
+      line-height: 2
+  .collapse-item__wrap-hide
+    display none

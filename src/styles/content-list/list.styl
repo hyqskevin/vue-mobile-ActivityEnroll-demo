@@ -1,0 +1,99 @@
+@import "../element.styl"
+// background
+list($top = 10px)
+  position relative
+  top $top
+  left 0
+  right 0
+  bottom 0
+  background $bgColor
+  padding 8px 12px
+  margin 8px
+  border-radius 4px
+  z-index 1
+
+//列表头部文字
+recent()
+  margin 40px 0 10px 10px
+  font-size 14px
+  font-weight bold
+no-list()
+  margin 40px 0
+  text-align center
+  font-size 16px
+head()
+  margin 20px 0
+  text-align center
+  font-size 16px
+  font-weight bold
+summary()
+  font-size 14px
+  margin 8px 10px
+  font-weight bold
+entry()
+  margin 10px
+  font-size 16px
+  line-height 24px
+
+// 列表样式
+list-info($height=120px, $margin=20px)
+  height $height
+  line-height 30px
+  margin $margin 0
+  padding 0 10px
+  font-size 16px
+  list-style-type none
+  .list-creator
+    white-space: nowrap
+    font-size 14px
+    overflow hidden
+    text-overflow: ellipsis
+    color $fontColorGray
+  .list-describe
+    white-space: nowrap
+    font-size 14px
+    overflow hidden
+    text-overflow: ellipsis
+  .list-title
+    white-space: nowrap
+    font-size 18px
+    overflow hidden
+    text-overflow: ellipsis
+  .list-state
+    margin-right 10px
+    float right
+    color $continue
+    font-size 14px
+  .list-number
+    margin-right 15px
+    font-size 14px
+    color $fontColorGray
+  .list-date
+    font-size 14px
+    color $fontColorGray
+detail-list-info($margin=10px)
+  line-height 30px
+  margin $margin 0
+  padding 0 10px
+  font-size 16px
+  list-style-type none
+big-button()
+  width 100%
+  text-align center
+  display: flex
+  flex-direction: row
+  justify-content : space-around
+  .big-button
+    width: 100%
+    margin: 0 10px
+button-group()
+  width 100%
+  text-align center
+  margin 40px 0
+  display: flex
+  flex-direction: row
+  justify-content : space-around
+  .button
+    width: 200px
+    margin: 0 10px
+

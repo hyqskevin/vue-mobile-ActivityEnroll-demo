@@ -1,0 +1,56 @@
+@import "element.styl"
+// 详情页，活动描述模块
+describe()
+  position absolute
+  top 0
+  left 0
+  right 0
+  background $bgColor
+  padding 0 12px
+  margin 8px
+  border-radius 4px
+  line-height 20px
+  font-size 14px
+  z-index 100
+  .describe-info
+    height 100px
+    line-height 25px
+    margin 10px 0
+    padding 0 10px
+    font-size 16px
+    list-style-type none
+    .list-title
+      white-space: nowrap
+      font-size 16px
+      overflow hidden
+      text-overflow: ellipsis
+      width 70%
+    .list-describe
+      white-space: nowrap
+      font-size 14px
+      overflow hidden
+      text-overflow: ellipsis
+    .list-creator
+      font-size 14px
+      margin-right 10px
+    .list-state
+      position: absolute
+      top: 10px
+      right: 10px
+      margin-right 10px
+      color $continue
+      font-size 14px
+    .list-number
+      margin-right 10px
+      float left
+      font-size 14px
+    .list-date
+      font-size 14px
+      margin-right 10px
+    .change-info
+      position absolute
+      top 36px
+      right 25px
+      font-size 14px
+      //float right
+      color $check

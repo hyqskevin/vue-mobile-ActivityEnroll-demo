@@ -1,0 +1,63 @@
+$bgColor=#fff
+$hColor=#a7e1cd
+$fontColor=#707070
+$fontColorGray= #868686
+$fontColorLight= #fff
+$bgColor-dark= #e5e5e5
+$blue=rgba(#63b3ed, 1)
+$yellow=rgba(#faf089, 1)
+$red=rgba(#fc8181, 1)
+$green=rgba(#a4e4bd, 1)
+$purple=rgba(#c1bae4, 0.40)
+$btnGreen=rgba(#1bb769, 0.90)
+$btnBlue=rgba(#2185d0, 0.90)
+$btnGrey=rgba(#c1c3c4, 0.90)
+$separateLine=rgba(#d2d4d5, 0.60)
+$check=rgba(#1e76b8, 0.80)
+$continue=rgba(#1bb767, 0.80)
+$wait=rgba(#e1ae47, 0.80)
+$reject=rgba(#d43d3d, 0.80)
+//$font = YaHei Monaco Hybird
+$font = Microsoft YaHei
+
+// 面板
+panel($height=50px, $fontSize=24px)
+  background: $bgColor
+  padding: 0
+  margin: 0
+  div
+    height: $height
+    line-height: $height
+    padding: 0 50px
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
+    text-align: left
+    font-size: $fontSize
+// 分割线
+separate($margin=10px)
+  position relative
+  left 0
+  margin $margin 0
+  border 0.5px solid $separateLine
+  // width 20px
+  height 0
+// 回到头部按钮
+show-icon()
+  position fixed
+  right 20px
+  bottom 60px
+  z-index 100
+  color $check
+// 内容页背景
+content()
+  position fixed
+  left 0
+  right 0
+  top 50px
+  bottom 0
+  width 100%
+  background $bgColor-dark
+  z-index 10
+
+

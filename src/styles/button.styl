@@ -1,0 +1,34 @@
+@import "element.styl"
+btn($height=50px, $btnColor=$blue, $fontSize=18px)
+  display inline-block
+  padding 5px
+  margin 0
+  background-color $btnColor
+  border-radius 5px
+  border 1px solid $btnColor
+  line-height 1
+  z-index 100
+  div
+    height $height
+    line-height $height
+    color $bgColor
+    font-size $fontSize
+    letter-spacing 2px
+    text-align center
+
+bigBtn($btnColor=$blue, $height=40px, $fontSize=20px)
+  //display inline-block
+  position fixed
+  bottom 8px
+  left 0
+  right 0
+  background-color $btnColor
+  line-height 1
+  z-index 100
+  div
+    height $height
+    line-height $height
+    text-align center
+    color $bgColor
+    font-size $fontSize
+    letter-spacing 2px

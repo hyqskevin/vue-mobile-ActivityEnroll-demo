@@ -1,0 +1,59 @@
+@import "element.styl"
+// 主页，搜索模块
+search($width=30%)
+  position absolute
+  top 0
+  left 0
+  right 0
+  background $bgColor
+  padding 0 12px
+  margin 8px
+  border-radius 4px
+  line-height 20px
+  font-size 14px
+  z-index 100
+  display: flex
+  flex-direction: row
+  justify-content : space-between
+  .date-picker
+    margin 8px 0
+    width $width
+    .el-input__inner
+      border 1px solid #DCDFE6
+  .search-button
+    float right
+    margin 8px 0
+    width 25%
+// 历史记录，搜索模块
+record-search()
+  position absolute
+  top 0
+  left 0
+  right 0
+  background $bgColor
+  padding 0 12px
+  margin 8px
+  border-radius 4px
+  line-height 20px
+  font-size 14px
+  z-index 100
+  .record-search-date
+    display flex
+    flex-direction row
+    justify-content space-between
+  .record-search-branch
+    height: 45px
+    line-height: 45px
+    display flex
+    flex-direction row
+    justify-content space-between
+    .el-input__inner
+      border 1px solid #DCDFE6 !important
+  .date-picker
+    margin 8px 0
+    .el-input__inner
+      border 1px solid #DCDFE6 !important
+  .search-button
+    float right
+    margin 8px 0
+    width 25%
